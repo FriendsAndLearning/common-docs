@@ -1,0 +1,102 @@
+{
+	"variables": [],
+	"info": {
+		"name": "User-Management",
+		"_postman_id": "264a301a-06b1-95e9-e71a-43d8ba7af3e8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createUser",
+			"request": {
+				"url": "http://localhost:9090/api/v1/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fullName\" : \"Raja Bhaiya Vishwakarma\",\n\t\"emailId\" : \"rajasvnit51@gmail.com\",\n\t\"dateOfBirth\" :\"25-04-1991\",\n\t\"mobileNumber\" : \"9730048351\",\n\t\"loginType\" : \"Admin\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"url": "http://localhost:9090/api/v1/users/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fullName\" : \"Raja Bhaiya Vishwakarma\",\n\t\"emailId\" : \"rajasvnit51@gmail.com\",\n\t\"dateOfBirth\" :\"25-04-1991\",\n\t\"mobileNumber\" : \"9730048351\",\n\t\"loginType\" : \"Admin\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"url": "http://localhost:9090/api/v1/users/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fullName\" : \"Raja Bhaiya\",\n\t\"emailId\" : \"rajasvnit52@gmail.com\",\n\t\"dateOfBirth\" :\"25-04-1992\",\n\t\"mobileNumber\" : \"9730048352\",\n\t\"loginType\" : \"User\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getUserById",
+			"request": {
+				"url": "http://localhost:9090/api/v1/users/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fullName\" : \"Raja Bhaiya Vishwakarma\",\n\t\"emailId\" : \"rajasvnit51@gmail.com\",\n\t\"dateOfBirth\" :\"25-04-1991\",\n\t\"mobileNumber\" : \"9730048351\",\n\t\"loginType\" : \"Admin\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getUsers",
+			"request": {
+				"url": "http://localhost:9090/api/v1/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
